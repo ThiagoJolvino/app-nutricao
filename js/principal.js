@@ -18,7 +18,7 @@ var pesoIsValid = true;
 var alturaIsValid = true;
 pacienteIMC = paciente.querySelector('.info-imc');
 
-if(peso < 0 || peso > 1000){
+if(peso <= 0 || peso >= 1000){
     pesoIsValid = false;
     pacienteIMC.textContent = "Peso inválido"
 }
