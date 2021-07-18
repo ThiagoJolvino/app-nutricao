@@ -1,5 +1,5 @@
-var titulo = document.querySelector(".titulo")
+console.log("Fui carregado de um arquivo externo");
 
-titulo.textContent = "Aparecida Nutricionista"
+var titulo = document.querySelector(".titulo");
 
-console.log(titulo);
+titulo.textContent = "Aparecida Nutricionista";
