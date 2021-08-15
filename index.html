@@ -18,8 +18,9 @@
 		<main>
 			<section class="container">
 				<h2>Meus pacientes</h2>
-				<label for="filtrar-tabela">Filtre</label>
-				<input type="text" name="filtro" id="filtrar-tabela" placeholder="digite o nome do paciente">
+				<label for="filtrar-tabela">Filtre:</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+				
 				<table>
 					<thead>
 						<tr>
@@ -71,7 +72,8 @@
 						</tr>
 					</tbody>
 				</table>
-
+				<span id="erro-ajax" class="invisivel">Erro ao buscar pacientes</span>
+				<button id="buscar-paciente" class="botao bto-principal">Buscar Paciente</button>
 			</section>
 			<section class="container">
 				<h2 id="titulo-form">Adicionar novo paciente</h2>
@@ -79,19 +81,19 @@
 				<form id="form-adiciona">
 					<div class="grupo">
 						<label for="nome">Nome:</label>
-						<input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+						<input id="nome" name="nome" type="text" placeholder="Digite o nome do seu paciente" class="campo">
 					</div>
 					<div class="grupo">
 						<label for="peso">Peso:</label>
-						<input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+						<input id="peso" name="peso" type="text" placeholder="Digite o peso do seu paciente" class="campo campo-medio">
 					</div>
 					<div class="grupo">
 						<label for="altura">Altura:</label>
-						<input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+						<input id="altura" name="altura" type="text" placeholder="Digite a altura do seu paciente" class="campo campo-medio">
 					</div>
 					<div class="grupo">
 						<label for="gordura">% de Gordura:</label>
-						<input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+						<input id="gordura" type="text" placeholder="Digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
 					</div>
 			
 					<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
@@ -102,6 +104,7 @@
 		<script src="js/calcula-imc.js" ></script>
 		<script src="js/remover-pacientes.js" ></script>
 		<script src="js/filtra.js" ></script>
+		<script src="js/buscar-pacientes.js"></script>
 		
 	</body>
 </html>
